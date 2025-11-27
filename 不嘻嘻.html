@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小狮子辛巴的生日大派对！</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- 全局变量定义 (配色方案) --- */
+        :root {
+            --primary-yellow: #FFD700; /* 狮子黄 */
+            --secondary-orange: #FF8C00; /* 鬃毛橙 */
+            --jungle-green: #228B22;   /* 丛林绿 */
+            --cream-bg: #FFFACD;       /* 奶油背景色 */
+            --text-dark: #333;
+        }
+
+        /* --- 基础重置和字体设置 --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--cream-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Fredoka One', cursive;
+            color: var(--secondary-orange);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        /* --- 装饰性元素 --- */
+        .paw-print {
+            font-size: 2rem;
+            color: var(--primary-yellow);
+            margin: 0 10px;
+        }
+
+        /* --- 1. 首屏 Hero Section --- */
+        #hero {
+            background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)), url('https://images.unsplash.com/photo-1605559911160-a3d95d213904?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <section id="hero">
+        <div class="container">
+            <h1>小狮子辛巴的生日大派对！</h1>
+            <div class="paw-print">🐾</div>
+            <p>欢迎来到丛林中最热闹的生日庆典！</p>
+        </div>
+    </section>
+</body>
+</html>
